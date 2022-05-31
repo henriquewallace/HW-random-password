@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RandomPasswordComponent } from './random-password/random-password.component';
 import { HeaderComponent } from './header/header.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -11,9 +12,10 @@ import { HeaderComponent } from './header/header.component';
     RandomPasswordComponent,
     HeaderComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
