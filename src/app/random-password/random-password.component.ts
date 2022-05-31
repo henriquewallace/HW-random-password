@@ -23,4 +23,11 @@ export class RandomPasswordComponent implements OnInit {
     return this.randomPassword;
   }
 
+  copyPassword(inputElement: any) {
+    inputElement.select();
+    document.execCommand('copy');
+    inputElement.setSelectionRange(0, 0);
+    alert('Text copied to clipboard!')
+  }
+
 }
